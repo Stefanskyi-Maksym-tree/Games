@@ -1,0 +1,108 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+/* line 6, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button {
+    height: 36px;
+    width: 92px;
+    border-radius: 6px;
+    border: none;
+    background: #bc3cd8;
+    background: linear-gradient(90deg, #bc3cd8 0%, #c54b8c 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 11px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button:hover {
+    box-shadow: 0 0 30px #de80ec;
+    transition: 0.3s all;
+    border: solid #fff 0.5px;
+    background: #c54b8c;
+    background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
+}
+
+.Dialog {
+    margin: 0 auto;
+    width: 720px;
+    height: 722px;
+    background-color: #020202;
+}
+
+/* line 720, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Dialog__Wrapper {
+    padding: 16px;
+}
+
+/* line 724, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Dialog__Wrapper .DialogImg {
+    width: 688px;
+    height: 534px;
+}
+
+.Dialog__Wrapper .DialogImg:hover {
+    box-shadow: 0 0 50px #706f70;
+    border: solid 2px #706f70;
+    transition: 0.5s all;
+}
+
+/* line 735, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Dialog__AboutGame {
+    margin-top: 16px;
+}
+
+/* line 737, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Dialog__AboutGame span {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 32px;
+    text-decoration: underline;
+    color:#fff
+}
+
+/* line 740, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Dialog__AboutGame p {
+    color:#fff;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+.Dialog__AboutUser {
+    margin-left: 16px;
+} 
+
+.Dialog__AboutGame img {
+    width: 48px;
+    height: 48px;
+}
+.Dialog__User {
+    margin-top: 18px;
+    display: flex;
+}
+
+
+.Dialog__User a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Dialog__User p {
+    margin-top: 0;
+}

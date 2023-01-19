@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"
+    <link rel="stylesheet" href="GameDialog.css">
+    <link rel="stylesheet" href="../Media/media.css">
+</head>
+<body>
+    <section class="Dialog">
+        <div class="container">
+            <div class="Dialog__Wrapper">
+                <img class="DialogImg" src="../../assets/GamesImg/NameGame.svg" alt="Games">
+                <div class="Dialog__AboutGame">
+                    <p><span>${gameName}</span></p>
+                    <p>${gameDescription}</p>
+                    <div class="Dialog__User">
+                        <img src="../../assets/icons/Ellipse 1.svg" alt="user">
+                        <div class="Dialog__AboutUser">
+                            <a href="#">${userName}</a>
+                            <p>${userReview}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

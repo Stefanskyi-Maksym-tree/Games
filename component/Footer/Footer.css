@@ -1,0 +1,114 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+body {
+    background-color: #020202;
+    overflow-x: hidden;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background: #bc3cd8;
+    background: linear-gradient(90deg, #bc3cd8 0%, #c54b8c 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button:hover {
+    box-shadow: 0 0 30px #de80ec;
+    transition: 0.5s all;
+    border: solid #de80ec 1px;
+    background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
+}
+.Footer {
+    margin-top: 32px;
+    padding: 0 16px 16px 16px;
+}
+
+/* line 330, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Footer__Info {
+    height: 261px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../../assets/bg/BgFooter.png) center center/cover no-repeat;
+}
+
+/* line 337, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Footer__Info h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+/* line 342, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Footer__Info p {
+    margin-top: 16px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.Footer__Info p br {
+    display: none;
+}
+/* line 347, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Footer__Info form {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+}
+
+/* line 349, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Footer__Info form input {
+    width: 175px;
+    height: 36px;
+    padding: 8px;
+    background-color: rgba(224, 163, 201, 0.56);
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* line 359, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Footer__Info form input:hover {
+    transition: 0.5s all;
+    box-shadow: 0 0 30px 0 #de80ec;
+    border: solid #CB8DE8 1px;
+}
+
+/* line 363, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Footer__Info form button {
+    width: 65px;
+    height: 36px;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.Footer__Info form input::placeholder {
+    color: rgba(255, 255, 255, 0.56);
+}

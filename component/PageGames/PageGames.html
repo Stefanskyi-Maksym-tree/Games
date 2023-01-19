@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="PageGame.css">
+    <link rel="stylesheet" href="../Header/Header.css">
+    <link rel="stylesheet" href="../AddNewGame/NewGame.css">
+    <link rel="stylesheet" href="../Footer/Footer.css">
+    <link rel="stylesheet" href="../Media/media.css">
+</head>
+<body>
+    <header class="Header">
+        <div class="container">
+                <div class="Header__Wrapper">
+                    <a class="Header__Logo animate__animated animate__tada" href="../../index.html">Light</a>
+                    <nav>
+                        <ul class="Header__List">
+                            <li >
+                                <a class="Header__Menu" href="../../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="Header__Menu" href="../PageGames/PageGames.html"><span>Games</span></a>
+                            </li>
+                            <li>
+                                <a class="Header__Menu" href="../PageUsers/PageUsers.html">Users</a>
+                            </li>
+                            <button type="submit" class="button Sing_In_Btn">Sing In</button>
+                            <img class="Header__ImgUser" src="../../assets/icons/Ellipse 3.svg" alt="user">
+                        </ul>
+                        <div class="Header__Hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
+        </div>
+        <div class="OverlayMenu">
+            <div class="OverlayMenu__Close"></div>
+            <div class="Header__menuSingInAdmin">
+                <div class="Header__MenuSingInUser">
+                    <div class="Header__closeMenu"></div>
+                    <img class="Header__Arrow" src="../../assets/items/Arrow.png" alt="Arrow">
+                    <a href="#" class="MenuUserChoise">My Profile</a>
+                    <a href="#" class="MenuUserChoise">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+<section class="Overlay animate__animated animate__flipInX">
+    <div class="container">
+        <div class="Overlay__Close"></div>
+        <div class="Overlay__Authorization">
+            <div class="Overlay__Header">
+                <h2>Authorization</h2>
+            </div>
+            <form>
+                <input placeholder="Email" id="inputEmail" required name="Email" type="email"> <br>
+                <input placeholder="Password" id="inputPassword" required minlength="5" type="password" name="password"> <br>
+                <button type="submit"  id="singInBtn" class="button Sing_In_Btn">Sign in</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="OverlayGame  animate__animated animate__flipInX">
+    <div class="container">
+        <div class="OverlayGame__Close"></div>
+        <div class="OverlayGame__AddNewGame" id="AddNewGame">
+            <div class="OverlayGame__Header">
+                <h2>Add New Game</h2>
+            </div>
+            <form>
+                <input name="name" required minlength="5" placeholder="Game name" type="text"> <br>
+                <input name="descr" required minlength="5" placeholder="Game description" type="text"> <br>
+                <input name="review" required minlength="5" placeholder="Game review" type="text"> <br>
+                <input name="img" required placeholder="Game image" type="text"> <br>
+                <button type="submit" class="button">Add New Game</button>
+            </form>
+        </div>
+    </div>
+</section>
+<main>
+    <section class="SubHeader">
+        <div class="container">
+            <div class="SubHeader__Wrapper">
+                <h2>VR Games</h2>
+                <div class="SubHeader__Menu">
+                    <button type="submit" class="button Add_New_Game">Add New Game</button>
+                    <div class="select" tabindex="1">
+                        <input class="selectopt" name="test" type="radio" id="opt1" checked>
+                        <label for="opt1" class="option">Sort by Date</label>
+                        <input class="selectopt" name="test" type="radio" id="opt2">
+                        <label for="opt2" class="option">New First</label>
+                        <input class="selectopt" name="test" type="radio" id="opt3">
+                        <label for="opt3" class="option">New Last</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Games">
+        <div class="container">
+            <ul>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="Games__NameGames">
+                    <div class="Games__AboutGame">
+                        <div>
+                            <p class="UseerName">${gameName}</p> 
+                            <p><span>${gameDescription}</span></p>
+                        </div>
+                        <div>
+                            <p class="UseerName">${gameName}</p>
+                            <p><span>${gameReview}</span></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="Pages">
+        <div class="container">
+            <div class="Pages__Wrapper">
+                <button type="submit" class="BtnArrowLeft"><</button>
+                <button type="submit" class="BtnNumberPages BtnNumberPages__1"><span>1</span></button>
+                <button type="submit" class="BtnNumberPages">2</button>
+                <button type="submit" class="BtnDots">...</button>
+                <button type="submit" class="BtnNumberPages">9</button>
+                <button type="submit" class="BtnNumberPages">10</button>
+                <button type="submit" class="BtnArrowRight">></button>
+            </div>"
+        </div>
+    </section>
+</main>
+<footer class="Footer" >
+    <div class="container">
+        <div class="Footer__Info">
+            <h2>Explore product in new way</h2>
+            <p>We specialize in creating visual identities for <br> producys and branda in your company</p>
+            <form id="footerForm">
+                <input type="email" placeholder="Your Email" name="Email" id="emailFooterForm">
+                <button type="submit" class="button" id="startFooterForm">Start</button>
+            </form>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="../../js/slick.min.js"></script>
+<script src="../../js/script.js"></script>
+
+</body>
+</html>

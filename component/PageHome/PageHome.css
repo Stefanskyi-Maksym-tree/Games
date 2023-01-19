@@ -1,0 +1,531 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+body {
+  background-color: #020202;
+  overflow-x: hidden;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 6px;
+  background: #bc3cd8;
+  background: linear-gradient(90deg, #bc3cd8 0%, #c54b8c 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button:hover {
+  box-shadow: 0 0 30px #de80ec;
+  transition: 0.5s all;
+  border: solid 1px #de80ec;
+  background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
+}
+
+.Header__Menu span  {
+  color: #cb24ec;
+}
+
+.Hero {
+  margin-top: 32px;
+}
+
+.Hero__Wrapper {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.Hero__Info {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.Hero__Info h1 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #FFF;
+  animation-duration: 2.5s;
+}
+
+/* line 49, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__Info p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+}
+
+/* line 56, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__InviteFriends {
+  max-width: 556px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 61, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__InviteFriends button {
+  width: 135px;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 15px;
+}
+
+/* line 66, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__ExploreDevise {
+  margin-left: 16px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 13px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Hero__InviteBtn {
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  color:#FFF
+}
+/* line 74, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__WhoIsOnline {
+  display: flex;
+}
+
+/* line 77, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__PeopleOnline {
+  width: 168px;
+  height: 48px;
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+/* line 83, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__pictures1 {
+  width: 48px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 87, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__pictures2 {
+  width: 48px;
+  position: absolute;
+  z-index: 2;
+  left: 40px;
+}
+
+/* line 92, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__pictures3 {
+  width: 48px;
+  position: absolute;
+  z-index: 3;
+  left: 80px;
+}
+
+/* line 97, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__pictures4 {
+  width: 48px;
+  position: absolute;
+  z-index: 4;
+  left: 120px;
+}
+
+/* line 102, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__Round {
+  margin-left: 32px;
+  width: 173px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 107, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__Round div {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #fff;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+/* line 114, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__Round span {
+  margin-left: 9px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* line 120, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__VirtualReality {
+  width: 421px;
+  height: 496px;
+  position: relative;
+  background: url(../../assets/img/Virtual.png) center center/cover no-repeat;
+  animation-duration: 1.5s;
+}
+
+/* line 127, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__VirtualInfo {
+  width: 275px;
+  height: 144px;
+  position: absolute;
+  top: 76%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 132, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__VirtualInfo h2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+}
+
+/* line 139, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__VirtualInfo div {
+  width: 151px;
+  height: 1px;
+  margin: 0 auto;
+  margin-top: 14px;
+  background-color: #fff;
+}
+
+/* line 145, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Hero__VirtualInfo p {
+  margin-top: 14px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 152, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience {
+  margin-top: 32px;
+}
+
+/* line 155, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 159, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Gaymer {
+  display: flex;
+}
+
+/* line 161, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Gaymer .woman {
+  width: 205px;
+  height: 300px;
+  margin-right: 16px;
+}
+
+/* line 165, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Gaymer .woman:hover {
+  transition: 0.5s all;
+  transform: scale(1.1);
+}
+
+/* line 168, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Gaymer .man {
+  width: 205px;
+  height: 300px;
+}
+
+/* line 171, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Gaymer .man:hover {
+  transition: 0.5s all;
+  transform: scale(1.1);
+}
+
+/* line 174, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Info {
+  width: 248px;
+  height: 247px;
+  margin-left: 64px;
+}
+
+/* line 178, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Info h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+/* line 184, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Info p {
+  margin-top: 21px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* line 191, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Experience__Info button {
+  margin-top: 21px;
+  width: 107px;
+  height: 36px;
+}
+
+/* line 195, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Player {
+  margin-top: 32px;
+}
+
+/* line 198, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Player__Wrapper {
+  margin: 0 16px 0 16px;
+  background-color: #534686;
+  padding: 16px 48px 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 70px 0 0;
+}
+
+/* line 206, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Player__Wrapper h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+/* line 211, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Player__Wrapper a {
+  width: 164px;
+  height: 61px;
+  border-radius: 6px 20px 6px 6px;
+}
+
+/* line 215, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments {
+  margin-top: 32px;
+}
+/* line 218, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__Wrapper {
+  margin: 0 16px;
+  background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #AA14F0 -42.58%, rgba(170, 20, 240, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(185, 54, 245, 0) 100%);
+  border-radius: 7px;
+}
+
+/* line 221, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__SubTitle {
+  margin-top: 16px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+/* line 228, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__Info {
+  padding: 16px 0;
+}
+
+/* line 230, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__Info h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+}
+
+/* line 235, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__Info ul {
+  margin: 0 auto;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.Comments__Info .slick-track {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+.Comments__Info .slick-arrow {
+  margin: 56px 3px 0 3px;
+  width: 9px;
+  height: 18px;
+  background-color: rgba(185, 54, 245, 0);
+  border: none;
+}
+
+/* line 243, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__Block {
+  width: 280px;
+  height: 128px;
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px #ba5ae600;
+  background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #CB8DE8 -42.58%, rgba(203, 143, 232, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(199, 137, 228, 0) 100%);
+}
+
+/* line 250, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__Block:hover {
+  transition: 0.5s all;
+  border: solid #de80ec 1px;
+}
+
+/* line 254, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__Block h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 8px;
+}
+
+/* line 259, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__Block h3 span {
+  color: #F7B603;
+}
+
+/* line 261, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments_Small {
+  margin-top: 12px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+/* line 267, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__People {
+  margin-top: 12px;
+  width: 143px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 273, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__People img {
+  width: 36px;
+}
+
+/* line 275, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__PeopleName {
+  margin-left: 8px;
+}
+
+/* line 277, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__PeopleName p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* line 281, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Comments__PeopleName span {
+  margin-top: 7px;
+  font-size: 8px;
+  color: #EB4468;
+}
+
+/* line 285, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.CompanyCulture {
+  margin-top: 32px;
+}
+
+/* line 288, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.CompanyCulture__Wrapper {
+  padding: 21.75px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* line 295, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.CompanyCulture__Text h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* line 299, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.CompanyCulture__Text h4 {
+  margin-top: 16px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* line 304, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.CompanyCulture__Item {
+  margin-left: 32px;
+  width: 188px;
+  height: 98px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 310, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.CompanyCulture__Item li {
+  width: 94px;
+  height: 45px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 317, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.CompanyCulture__Item li:nth-child(3) {
+  margin-top: 3px;
+}
+
+/* line 319, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.CompanyCulture__Item li:nth-child(4) {
+  margin-top: 3px;
+}
+
+/* line 322, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.CompanyCulture__Item li p {
+  margin-top: 4px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 9px;
+}

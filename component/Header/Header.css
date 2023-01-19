@@ -1,0 +1,248 @@
+/* line 1, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* line 7, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+  body {
+    background-color: #020202;
+    overflow-x: hidden;
+  }
+  
+  /* line 10, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+  html {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1312px;
+    margin: 0 auto;
+  }
+  /* line 13, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 6px;
+  border: none;
+  background: #bc3cd8;
+  background: linear-gradient(90deg, #bc3cd8 0%, #c54b8c 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.button:hover {
+  box-shadow: 0 0 30px #de80ec;
+  transition: 0.5s all;
+  border: solid 1px #fefefe;
+  background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
+}
+
+.Header__Wrapper {
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header__ImgUser {
+  width: 42px;
+  height: 42px;
+  display: none;
+}
+.Header__Arrow {
+  margin-left: 90px;
+}
+
+.Header__menuSingInAdmin {
+  display: none;
+}
+.Header__MenuSingInUser {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 90px;
+  width: 135px;
+  height: 95px;
+  border-radius: 6px;
+  padding: 16px;
+  gap: 10px;
+  background-color: #020202;
+  border:solid 1px #BC3CD8;
+  box-shadow: 0 0 20px 0 #dd80ec96;
+  z-index: 101;
+}
+.Header__closeMenu {
+  top: 5px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 5px;
+}
+
+
+.MenuUserChoise {
+  font-weight: 700;
+  font-size: 14px;
+  color:#fff;
+  text-decoration: none;
+}
+
+.Header__Logo {
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  animation-iteration-count: 2;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.Header__List {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  list-style: none;
+}
+
+.Header__List button {
+  width: 112px;
+  height: 44px;
+}
+
+.Header__Menu {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.5s all;
+  color: #fff;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Header__Menu::after {
+  transition: 0.5s all;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 2px;
+  border-radius: 6px;
+  height: 3px;
+  width: 0;
+  background-color: #fff;
+}
+
+/* line 51, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Header__Menu:hover {
+  color: #cb24ec;
+  color: linear-gradient(90deg, rgba(203, 36, 236, 0.997637) 0%, #df308d 100%);
+}
+
+/* line 54, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Header__Menu:hover::after {
+  width: 50%;
+}
+
+.Header__Menu span {
+  color: #cb24ec;
+}
+
+.Header__Hamburger {
+  display: none;
+}
+
+.OverlayMenu {
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, .60);
+  z-index: 99;
+}
+
+.OverlayMenu__Close { 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Overlay {
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, .80);
+  z-index: 99;
+}
+
+.Overlay__Close { 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Overlay__Authorization {
+  position: absolute;
+  padding: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #020202;
+  border: solid 1px #C8D1E5;
+  box-shadow: 0 0 15px #cbc5cc;
+  border-radius: 6px;
+  animation-duration: 1s;
+  z-index: 110;
+}
+.Overlay__Header {
+  padding: 16px;
+  background: #534686;
+  border-radius: 0 70px 0 0;
+  border: solid 2px  #8563b4aa;
+  z-index: 110;
+}
+.Overlay h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 21px;
+  z-index: 110;
+}
+.Overlay input {
+  margin-top: 16px;
+  width: 560px;
+  height: 63px;
+  padding: 18px 32px;
+  background-color: #020202;
+  border: 1px solid #C8D1E5;
+  font-weight: 600;
+  font-size: 18px;
+  color: #C8D1E5;
+  cursor: pointer;
+  z-index: 110;
+}
+.Overlay input:hover {
+  box-shadow: 0 0 15px #aa6eff;
+  transition: 0.3s all;
+}
+.Overlay button {
+  width: 80px;
+  height: 36px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
+  z-index: 110;
+}
+
+#Authorization {
+  display: none;
+  z-index: 110;
+}

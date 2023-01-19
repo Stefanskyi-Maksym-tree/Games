@@ -1,0 +1,84 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+body {
+    background-color: #020202;
+    overflow-x: hidden;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+/* line 15, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background: #bc3cd8;
+    background: linear-gradient(90deg, #bc3cd8 0%, #c54b8c 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button:hover {
+    box-shadow: 0 0 30px #de80ec;
+    transition: 0.5s all;
+    border: solid #de80ec 1px;
+    background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
+}
+
+/* line 31, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Header__Menu span {
+    color: #cb24ec;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.EmptyGames {
+    height: 474px;
+    display: flex;
+    align-items: center;
+}
+
+/* line 38, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.EmptyGames__SingIn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.EmptyGames__SingIn h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 72px;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.EmptyGames__Descr {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 32px;
+    gap: 15px;
+}
+
+/* line 52, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.EmptyGames__Descr a {
+    color: #BC3CD8;
+}

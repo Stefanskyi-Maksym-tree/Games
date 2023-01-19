@@ -1,0 +1,112 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+  /* line 6, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button {
+  border-radius: 6px;
+  border: none;
+  background: #bc3cd8;
+  background: linear-gradient(90deg, #bc3cd8 0%, #c54b8c 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+  
+  /* line 19, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button:hover {
+  box-shadow: 0 0 50px #de80ec;
+  transition: 0.3s all;
+  border: solid #fff 0.5px;
+  background: #c54b8c;
+  background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
+}
+
+.OverlayGame {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, .80);
+  z-index: 99;
+}
+ 
+.OverlayGame__Close {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.OverlayGame__AddNewGame {
+  padding: 16px;
+  background-color: #020202;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: solid 1px #C8D1E5;
+  box-shadow: 0 0 10px #cbc5cc;
+  border-radius: 6px;
+  animation-duration: 1s;
+}
+  
+  /* line 678, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.OverlayGame__Header {
+  height: 64px;
+  padding: 16px;
+  background: #534686;
+  border-radius: 0 70px 0 0;
+  border: solid 2px  #8563b4aa;
+  color: #fff;
+  font-weight: 600;
+  font-size: 21px;
+  }
+  
+  /* line 689, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.OverlayGame h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.OverlayGame input {
+  margin-top: 16px;
+  width: 560px;
+  height: 63px;
+  padding: 18px 32px;
+  background-color: #020202;
+  border: 2px solid #C8D1E5;
+  font-weight: 600;
+  font-size: 18px;
+  color: #C8D1E5;
+  cursor: pointer;
+}
+
+/* line 711, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.OverlayGame input:hover {
+  box-shadow: 0 0 15px #aa6eff;
+  transition: 0.3s all;
+}
+
+/* line 714, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.OverlayGame button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
+  width: 150px;
+  height: 36px;
+}
+
+#AddNewGame {
+  display: none;
+}

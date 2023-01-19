@@ -1,0 +1,402 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* line 7, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+body {
+    background-color: #020202;
+    overflow-x: hidden;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+/* line 12, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background: #bc3cd8;
+    background: linear-gradient(90deg, #bc3cd8 0%, #c54b8c 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.button:hover {
+    box-shadow: 0 0 30px #de80ec;
+    transition: 0.5s all;
+    border: solid #de80ec 1px;
+    background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
+}
+
+/* line 31, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Header__Menu span {
+    color: #cb24ec;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Users {
+    padding: 0 16px;
+    margin-top: 18px;
+}
+
+/* line 36, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Users__SubHeader {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Users__SubHeader h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+/* line 45, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.select {
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    width:160px;
+    height:36px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+  
+.option {
+    padding:0 30px 0 10px;
+    min-height:40px;
+    border-radius: 6px;
+    display:flex;
+    align-items:center;
+    background-color:#020202;
+    border:#BC3CD8 solid 1px;
+    position:absolute;
+    top:0;
+    width:100%;
+    pointer-events:none;
+    order:2;
+    z-index:1;
+    transition:background .4s ease-in-out;
+    box-sizing:border-box;
+    overflow:hidden;
+    white-space:nowrap;
+    
+}
+  
+  
+.select:focus .option {
+    position:relative;
+    pointer-events:all;
+}
+  
+.selectopt {
+    opacity:0;
+    position:absolute;
+    left:-99999px;
+}
+  
+input:checked + label {
+    order: 1;
+    z-index:2;
+    background:#020202;
+    border-top:none;
+    position:relative;
+    border:solid 1px #BC3CD8 
+}
+  
+input:checked + label:after {
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #BC3CD8;
+    position:absolute;
+    right:10px;
+    top:calc(50% - 2.5px);
+    pointer-events:none;
+    z-index:3;
+}
+  
+input:checked + label:before {
+    position:absolute;
+    right:0;
+    height: 40px;
+    width: 40px;
+    content: '';
+    background:#020202;
+}
+.Users__UsersSection {
+    height: 444px;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* line 60, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Users__UsersSection ul {
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* line 65, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Users__UsersSection ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* line 71, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Users__UsersSection ul li p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* line 76, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Users__Wrapper {
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.Users__WrapperName {
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.Users__Img {
+    width: 44px;
+    height: 44px;
+}
+
+/* line 84, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Users__Actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 44px;
+    width: 54px;
+    align-items: center;
+}
+
+/* line 89, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Users__Round {
+    margin: 1px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+.Users__ActiveSelect {
+    position: relative;
+    width: 54px;
+}
+.Users__MenuAdmin {
+    display: none;
+}
+.Users__MenuAdmin2 {
+    display: none;
+}
+.Users__MenuActiveAdmin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 16px;
+    top: 60px;
+    right: 65px;
+    width: 116px;
+    height: 146px;
+    background:#020202;
+    border:solid 1px #BC3CD8;
+    z-index: 101;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 #dd80ec96;
+}
+.Users__MenuActiveAdmin2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 16px;
+    bottom: -40px;
+    right: 65px;
+    width: 116px;
+    height: 146px;
+    background:#020202;
+    border:solid 1px #BC3CD8;
+    z-index: 101;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 #dd80ec96;
+}
+.Users__MenuActiveModerator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 16px;
+    top: 130px;
+    right: 65px;
+    width: 116px;
+    height: 115px;
+    background:#020202;
+    border:solid 1px #BC3CD8;
+    z-index: 101;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 #dd80ec96;
+}
+.Users__MenuActiveUser {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 16px;
+    bottom: 125px;
+    right: 65px;
+    width: 105px;
+    height: 53px;
+    background:#020202;
+    border:solid 1px #BC3CD8;
+    z-index: 101;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 #dd80ec96;
+}
+.Users__MenuActiveUser2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 16px;
+    bottom: -20px;
+    right: 65px;
+    width: 105px;
+    height: 53px;
+    background:#020202;
+    border:solid 1px #BC3CD8;
+    z-index: 101;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 #dd80ec96;
+}
+
+.Users__MenuModerator {
+    display: none;
+}
+ .Users__Moderator {
+    cursor:pointer;
+ }
+ .Users__MenuUser {
+    display: none;
+}
+ .Users__User {
+    cursor:pointer;
+ }
+ .Users__MenuUser2 {
+    display: none;
+}
+ .Users__User2 {
+    cursor:pointer;
+ }
+.Users__Admin {
+    cursor: pointer;
+}
+
+.Users__Admin2 {
+    cursor: pointer;
+}
+
+.Users__Descr {
+    font-weight: 400;
+    font-size: 12px;
+    color:#fff;
+    text-decoration: none;
+}
+.Users__Overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 145%;
+    background-color: rgba(0, 0, 0, .60);
+    z-index: 100;
+}
+.Users__Descr .button:hover {
+    box-shadow: 0 0 30px #de80ec;
+    transition: 0.5s all;
+    border: solid #de80ec 1px;
+}
+.Pages {
+    padding: 0 16px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.Pages .BtnArrowLeft {
+    background-color: #919EAB;
+}
+ 
+
+.Pages .BtnNumberPages {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Pages__Wrapper {
+    width: 272px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* line 104, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Pages__Wrapper button {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #DFE3E8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* line 111, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Pages__Wrapper button:hover {
+    background: #919EAB;
+    color: #C4CDD5;
+    border: none;
+}
+
+/* line 115, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
+.Pages__Wrapper button:active {
+    background: #919EAB;
+    color: #C4CDD5;
+    border: none;
+}
