@@ -43,6 +43,10 @@ html {
     background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
 }
 
+.Add_New_Game {
+    display: none;
+}
+
 /* line 31, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
 .SubHeader {
     margin-top: 16px;

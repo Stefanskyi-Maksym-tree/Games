@@ -137,6 +137,28 @@ $('form').submit(function(e) {
 });
 
 
+// explore device
+
+let device = {
+    phone: 'IPhone',
+    modal: 'XS Max',
+    version: 'iOS 16.1.1'
+};
+
+$('.Hero__ExploreDevise').on('click', function(e) {
+    console.log(device);
+});
+
+// game dialog 
+
+
+$('.Games__NameGames').on('click', function(e) {
+    $('.Dialog, .Dialog__OverlayDialog '). fadeIn();
+});
+$('.Dialog__OverlayDialog__Close').on('click', function(e) {
+    $('.OverlayDialog, .Dialog').fadeOut();
+});
+
 // sing in loggin and password
 
 const login = document.getElementById("inputEmail");
@@ -147,6 +169,7 @@ singIn.onclick = function() {
     if (login.value === 'admin@ukr.net' && password.value === 'admin') {
         $('.Overlay__Authorization, .Overlay, .Sing_In_Btn').fadeOut();
         $('.Header__ImgUser'). fadeIn();
+        $('.Add_New_Game'). fadeIn();
         console.log('done');
     } else {
         $('.Overlay__Authorization, .Overlay').fadeOut();
@@ -155,6 +178,14 @@ singIn.onclick = function() {
     login.value = '';
     password.value = '';
 };
+
+// log out
+
+
+$('.logOut').on('click', function(e) {
+    $('.Header__ImgUser, .Header__menuSingInAdmin, .OverlayMenu'). fadeOut();
+    $('.Sing_In_Btn'). fadeIn();
+});
 
 // menu admin
 

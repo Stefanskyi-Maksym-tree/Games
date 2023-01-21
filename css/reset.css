@@ -281,6 +281,11 @@
     margin-left: 64px;
   }
   
+  .Experience__Info a{
+    text-decoration: none;
+    color: #fff;
+  }
+
   /* line 178, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
   .Experience__Info h2 {
     color: #fff;

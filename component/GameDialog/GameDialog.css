@@ -34,11 +34,34 @@
     background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
 }
 
+.Dialog .Dialog__OverlayDialog {
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .80);
+    z-index: 99;
+  }
+
+.Dialog__OverlayDialog__Close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 .Dialog {
+    position: fixed;
     margin: 0 auto;
-    width: 720px;
-    height: 722px;
+    width: 612px;
+    height: 645px;
     background-color: #020202;
+    position: absolute;
+    padding: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: none;
 }
 
 /* line 720, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
@@ -48,19 +71,14 @@
 
 /* line 724, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
 .Dialog__Wrapper .DialogImg {
-    width: 688px;
-    height: 534px;
+    width: 550px;
+    height: 454px;
 }
 
-.Dialog__Wrapper .DialogImg:hover {
-    box-shadow: 0 0 50px #706f70;
-    border: solid 2px #706f70;
-    transition: 0.5s all;
-}
 
 /* line 735, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
 .Dialog__AboutGame {
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
 /* line 737, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
@@ -75,23 +93,23 @@
 /* line 740, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
 .Dialog__AboutGame p {
     color:#fff;
-    margin-top: 16px;
-    font-weight: 600;
-    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 10px;
     line-height: 24px;
     text-decoration: underline;
 }
 
 .Dialog__AboutUser {
-    margin-left: 16px;
+    margin-left: 10px;
 } 
 
 .Dialog__AboutGame img {
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
 }
 .Dialog__User {
-    margin-top: 18px;
+    margin-top: 10px;
     display: flex;
 }
 

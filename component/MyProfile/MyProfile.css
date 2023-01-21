@@ -1,0 +1,56 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #020202;
+    overflow-x: hidden;
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background: #bc3cd8;
+    background: linear-gradient(90deg, #bc3cd8 0%, #c54b8c 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+
+.button:hover {
+    box-shadow: 0 0 30px #de80ec;
+    transition: 0.5s all;
+    border: solid #de80ec 1px;
+    background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
+}
+
+
+.myProfile {
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.myProfile h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 52px;
+}
+

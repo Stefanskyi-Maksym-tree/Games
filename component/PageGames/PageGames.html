@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../AddNewGame/NewGame.css">
     <link rel="stylesheet" href="../Footer/Footer.css">
     <link rel="stylesheet" href="../Media/media.css">
+    <link rel="stylesheet" href="../GameDialog/GameDialog.css">
 </head>
 <body>
     <header class="Header">
@@ -46,8 +47,8 @@
                 <div class="Header__MenuSingInUser">
                     <div class="Header__closeMenu"></div>
                     <img class="Header__Arrow" src="../../assets/items/Arrow.png" alt="Arrow">
-                    <a href="#" class="MenuUserChoise">My Profile</a>
-                    <a href="#" class="MenuUserChoise">Log Out</a>
+                    <a href="../MyProfile/MyProfile.html" class="MenuUserChoise">My Profile</a>
+                    <a href="#" class="MenuUserChoise logOut">Log Out</a>
                 </div>
             </div>
         </div>
@@ -79,8 +80,26 @@
                 <input name="descr" required minlength="5" placeholder="Game description" type="text"> <br>
                 <input name="review" required minlength="5" placeholder="Game review" type="text"> <br>
                 <input name="img" required placeholder="Game image" type="text"> <br>
-                <button type="submit" class="button">Add New Game</button>
+                <button id="addNewGame" type="submit" class="button ">Add New Game</button>
             </form>
+        </div>
+    </div>
+</section>
+<section class="Dialog">
+    <div class="container">
+        <div class="Dialog__Wrapper">
+            <img class="DialogImg" src="../../assets/GamesImg/NameGame.svg" alt="Games">
+            <div class="Dialog__AboutGame">
+                <p><span>${gameName}</span></p>
+                <p>${gameDescription}</p>
+                <div class="Dialog__User">
+                    <img src="../../assets/icons/Ellipse 1.svg" alt="user">
+                    <div class="Dialog__AboutUser">
+                        <a href="#">${userName}</a>
+                        <p>${userReview}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

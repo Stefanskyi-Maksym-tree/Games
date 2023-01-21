@@ -42,6 +42,10 @@
   background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
 }
 
+.Header {
+  z-index: 100;
+}
+
 .Header__Wrapper {
   padding: 14px 16px;
   display: flex;
