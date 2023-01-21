@@ -10,79 +10,58 @@
     max-width: 1312px;
     margin: 0 auto;
 }
-/* line 6, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
-.button {
-    height: 36px;
-    width: 92px;
-    border-radius: 6px;
-    border: none;
-    background: #bc3cd8;
-    background: linear-gradient(90deg, #bc3cd8 0%, #c54b8c 100%);
-    color: #fff;
-    font-weight: 700;
-    font-size: 11px;
-    cursor: pointer;
-    z-index: 1;
-}
 
-/* line 19, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
-.button:hover {
-    box-shadow: 0 0 30px #de80ec;
-    transition: 0.3s all;
-    border: solid #fff 0.5px;
-    background: #c54b8c;
-    background: linear-gradient(90deg, #c54b8c 0%, #bc3cd8 100%);
-}
-
-.Dialog .Dialog__OverlayDialog {
-    
+.OverlayDialog {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     background-color: rgba(0, 0, 0, .80);
     z-index: 99;
+    display: none;
   }
 
-.Dialog__OverlayDialog__Close {
+.OverlayDialog__Close {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.Dialog {
+.OverlayDialog__Dialog {
     position: fixed;
     margin: 0 auto;
     width: 612px;
-    height: 645px;
+    height: 615px;
     background-color: #020202;
     position: absolute;
     padding: 16px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 100;
+    box-shadow: 0 0 30px #cbc5cc;
+    border-radius: 10px;
+    z-index: 110;
     display: none;
 }
 
 /* line 720, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
-.Dialog__Wrapper {
+.OverlayDialog__Wrapper {
     padding: 16px;
 }
 
 /* line 724, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
-.Dialog__Wrapper .DialogImg {
+.OverlayDialog__Wrapper .DialogImg {
     width: 550px;
-    height: 454px;
+    height: 424px;
 }
 
 
 /* line 735, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
-.Dialog__AboutGame {
+.OverlayDialog__AboutGame {
     margin-top: 10px;
 }
 
 /* line 737, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
-.Dialog__AboutGame span {
+.OverlayDialog__AboutGame span {
     font-weight: 600;
     font-size: 21px;
     line-height: 32px;
@@ -91,36 +70,34 @@
 }
 
 /* line 740, ../../../../../../../../../../../../../Users/admin/Desktop/HomeWork/src/sass/style.sass */
-.Dialog__AboutGame p {
+.OverlayDialog__AboutGame p {
     color:#fff;
-    margin-top: 10px;
     font-weight: 500;
-    font-size: 10px;
-    line-height: 24px;
+    font-size: 13px;
     text-decoration: underline;
 }
 
-.Dialog__AboutUser {
+.OverlayDialog__AboutUser {
     margin-left: 10px;
 } 
 
-.Dialog__AboutGame img {
+.OverlayDialog__AboutGame img {
     width: 35px;
     height: 35px;
 }
-.Dialog__User {
+.OverlayDialog__User {
     margin-top: 10px;
     display: flex;
 }
 
 
-.Dialog__User a {
+.OverlayDialog__User a {
     color: #fff;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
 }
 
-.Dialog__User p {
+.OverlayDialog__User p {
     margin-top: 0;
 }

@@ -56,6 +56,7 @@
 .Header__ImgUser {
   width: 42px;
   height: 42px;
+  cursor: pointer;
   display: none;
 }
 .Header__Arrow {

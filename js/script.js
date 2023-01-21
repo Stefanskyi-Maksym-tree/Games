@@ -151,12 +151,11 @@ $('.Hero__ExploreDevise').on('click', function(e) {
 
 // game dialog 
 
-
 $('.Games__NameGames').on('click', function(e) {
-    $('.Dialog, .Dialog__OverlayDialog '). fadeIn();
+    $('.OverlayDialog, .OverlayDialog__Dialog'). fadeIn();
 });
-$('.Dialog__OverlayDialog__Close').on('click', function(e) {
-    $('.OverlayDialog, .Dialog').fadeOut();
+$('.OverlayDialog__Close').on('click', function(e) {
+    $('.OverlayDialog, .OverlayDialog__Dialog').fadeOut();
 });
 
 // sing in loggin and password

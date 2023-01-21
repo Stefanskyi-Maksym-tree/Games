@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="../Media/media.css">
 </head>
 <body>
-    <section class="Dialog Dialog__OverlayDialog">
+<section class="OverlayDialog">
+    <div class="OverlayDialog__Close"></div>
+    <div class="OverlayDialog__Dialog">
         <div class="container">
-            <div class="Dialog Dialog__OverlayDialog__Close"></div>
-            <div class="Dialog__Wrapper">
+            <div class="OverlayDialog__Wrapper">
                 <img class="DialogImg" src="../../assets/GamesImg/NameGame.svg" alt="Games">
-                <div class="Dialog__AboutGame">
+                <div class="OverlayDialog__AboutGame">
                     <p><span>${gameName}</span></p>
                     <p>${gameDescription}</p>
-                    <div class="Dialog__User">
+                    <div class="OverlayDialog__User">
                         <img src="../../assets/icons/Ellipse 1.svg" alt="user">
-                        <div class="Dialog__AboutUser">
+                        <div class="OverlayDialog__AboutUser">
                             <a href="#">${userName}</a>
                             <p>${userReview}</p>
                         </div>
@@ -28,7 +29,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- <section class="Dialog">
         <div class="container">
             <div class="Dialog__Wrapper">
